@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Calendario</title>
+
+    <!-- Icono del navegador -->
+    <link href="imagenes/icon.png" rel="icon" type="image/png" sizes="194x194">
+
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <!-- Fuente de Google Fonts - Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div class="container">
+      <!-- Calendario -->
+      <div class="calendar">
+        <!-- Encabezado del mes -->
+        <div class="month">
+          <i class="fas fa-angle-left prev"><b><</b></i> <!-- Botón para el mes anterior -->
+          <div class="date">
+            <h1>Septiembre</h1> <!-- Nombre del mes -->
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"> <b>></b></i> <!-- Botón para el mes siguiente -->
+        </div>
+
+        <!-- Días de la semana -->
+        <div class="weekdays">
+          <div>Do</div>
+          <div>Lu</div>
+          <div>Ma</div>
+          <div>Mi</div>
+          <div>Ju</div>
+          <div>Vi</div>
+          <div>Sa</div>
+        </div>
+
+        <!-- Días del mes -->
+        <div class="days">
+          <!-- Días del mes anterior -->
+          <div class="prev-date">1</div>
+          <div class="prev-date">2</div>
+          <div class="prev-date">3</div>
+          <div class="prev-date">4</div>
+          <div class="prev-date">5</div>
+
+          <!-- Días del mes actual -->
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div class="today">5</div> <!-- Día actual destacado -->
+          <div>6</div>
+          <div>7</div>
+          <!-- ... Continúan los días del mes actual -->
+
+          <!-- Días del mes siguiente -->
+          <div class="next-date">1</div>
+          <div class="next-date">2</div>
+          <div class="next-date">3</div>
+          <div class="next-date">4</div>
+          <div class="next-date">5</div>
+          <div class="next-date">6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
